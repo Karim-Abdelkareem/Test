@@ -1,0 +1,54 @@
+{
+  "round": "67a7a4bbcd5f1ce531f0d692",
+  "total": 3,
+  "data": [
+    {
+      "_id": "67a7a4f613acabd04a1e4b7a",
+      "userId": "67994be1cd73d9571e71ad9b",
+      "roundId": "67a7a4bbcd5f1ce531f0d692",
+      "round": "frontend r30",
+      "studentID": 16851631,
+      "name": "mohamed ahmed",
+      "email": "mohamed@gmail.com",
+      "phone": "01098828339",
+      "age": "20",
+      "total": "100",
+      "rank": "1",
+      "__v": 0,
+      "createdAt": "2025-02-08T18:39:50.092Z",
+      "updatedAt": "2025-02-08T18:39:50.092Z"
+    },
+    {
+      "_id": "67a7a4f613acabd04a1e4b7b",
+      "userId": "67994be1cd73d9571e71ad9b",
+      "roundId": "67a7a4bbcd5f1ce531f0d692",
+      "round": "frontend r30",
+      "studentID": 16165123156,
+      "name": "osama ahmed",
+      "email": "osama@gmail.com",
+      "phone": "01153551290",
+      "age": "21",
+      "total": "100",
+      "rank": "2",
+      "__v": 0,
+      "createdAt": "2025-02-08T18:39:50.092Z",
+      "updatedAt": "2025-02-08T18:39:50.092Z"
+    },
+    {
+      "_id": "67a7a4f613acabd04a1e4b7d",
+      "userId": "67994be1cd73d9571e71ad9b",
+      "roundId": "67a7a4bbcd5f1ce531f0d692",
+      "round": "frontend r30",
+      "studentID": 15656156156,
+      "name": "osama ahmed",
+      "email": "osama@gmail.com",
+      "phone": "01153551290",
+      "age": "21",
+      "total": "100",
+      "rank": "2",
+      "__v": 0,
+      "createdAt": "2025-02-08T18:39:50.092Z",
+      "updatedAt": "2025-02-08T18:39:50.092Z"
+    }
+  ]
+}

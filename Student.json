@@ -1,0 +1,45 @@
+[
+    {
+        "studentID" : 16851631,
+        "name": "Mohamed Ahmed",
+        "round": "frontend R30",
+        "email": "mohamed@gmail.com",
+        "phone": "01098828339",
+        "age": 20,
+        "total": 100,
+        "rank": 1
+    },
+    {
+        "studentID" :16165123156 ,
+        "name": "osama Ahmed",
+        "round": "frontend R30",
+        "email": "osama@gmail.com",
+        "phone": "01153551290",
+        "age": 21,
+        "total": 100,
+        "rank": 2
+    },
+    {
+        "studentID" :15615 ,
+        "name": "osama Ahmed",
+        "round": "frontend R30",
+        "email": "osama@gmail.com",
+        "phone": "01153551290",
+        "age": 21,
+        "total": 100,
+        "rank": 2
+    },
+    {
+        "studentID" :15656156156 ,
+        "name": "osama Ahmed",
+        "round": "frontend R30",
+        "email": "osama@gmail.com",
+        "phone": "01153551290",
+        "age": 21,
+        "total": 100,
+        "rank": 2
+    }
+    
+    
+]
+
