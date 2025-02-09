@@ -30,17 +30,17 @@ app.use(
   })
 );
 
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: true,
-    store: new session.MemoryStore(),
-    cookie: {
-      secure: true, // Change to true in production with HTTPS
-    },
-  })
-);
+// app.use(
+//   session({
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: true,
+//     store: new session.MemoryStore(),
+//     cookie: {
+//       secure: true, // Change to true in production with HTTPS
+//     },
+//   })
+// );
 
 // Application Middleware
 app.use(express.json());
