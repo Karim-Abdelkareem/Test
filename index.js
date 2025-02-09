@@ -58,36 +58,39 @@ app.use("/rounds", RoundRouter);
 app.use("/students", studentRouter);
 
 // Route to handle file downloads
-app.get('/downloads/:filename', (req, res) => {
-    const filePath = path.join(__dirname, 'downloads', req.params.filename);
-    
-    // Check if file exists
-    if (!fs.existsSync(filePath)) {
-        return res.status(404).send('File not found');
-    }
+app.get("/downloads/:filename", (req, res) => {
+  const filePath = path.join(__dirname, "downloads", req.params.filename);
 
-    // Set the headers to force download
-    res.setHeader('Content-Disposition', `attachment; filename=${req.params.filename}`);
-    res.setHeader('Content-Type', 'application/octet-stream'); // Generic binary file type
+  // Check if file exists
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).send("File not found");
+  }
 
-    // Log the headers for debugging
-    console.log("Response Headers:", {
-        'Content-Disposition': res.getHeader('Content-Disposition'),
-        'Content-Type': res.getHeader('Content-Type')
-    });
+  // Set the headers to force download
+  res.setHeader(
+    "Content-Disposition",
+    `attachment; filename=${req.params.filename}`
+  );
+  res.setHeader("Content-Type", "application/octet-stream"); // Generic binary file type
 
-    // Stream the file to the client
-    const fileStream = fs.createReadStream(filePath);
-    fileStream.pipe(res);
+  // Log the headers for debugging
+  console.log("Response Headers:", {
+    "Content-Disposition": res.getHeader("Content-Disposition"),
+    "Content-Type": res.getHeader("Content-Type"),
+  });
 
-    fileStream.on('error', (err) => {
-        console.error('File stream error:', err);
-        res.status(500).send('Error streaming file');
-    });
+  // Stream the file to the client
+  const fileStream = fs.createReadStream(filePath);
+  fileStream.pipe(res);
+
+  fileStream.on("error", (err) => {
+    console.error("File stream error:", err);
+    res.status(500).send("Error streaming file");
+  });
 });
 
+DBConnection();
 // App Listening
 app.listen(port, () => {
-    console.log(`SEF Application Running On Port : ${port}`);
-    DBConnection();
+  console.log(`SEF Application Running On Port : ${port}`);
 });
